@@ -15,8 +15,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0071-simplify-path](https://github.com/kavyavuribindi/LeetcodeMetaTagged/tree/master/0071-simplify-path) |
+| [0125-valid-palindrome](https://github.com/kavyavuribindi/LeetcodeMetaTagged/tree/master/0125-valid-palindrome) |
 ## Stack
 |  |
 | ------- |
 | [0071-simplify-path](https://github.com/kavyavuribindi/LeetcodeMetaTagged/tree/master/0071-simplify-path) |
+## Two Pointers
+|  |
+| ------- |
+| [0125-valid-palindrome](https://github.com/kavyavuribindi/LeetcodeMetaTagged/tree/master/0125-valid-palindrome) |
 <!---LeetCode Topics End-->
