@@ -7,9 +7,17 @@
 -- where a.rn>1)
 
 
-delete from person
-where
-id not in(
-select min(id) from person
-group by email
+-- delete from person
+-- where
+-- id not in(
+-- select min(id) from person
+-- group by email
+-- )
+
+
+with cte as (
+    select id, rank() over(partition by email order by id) as rnk
+    from person
 )
+
+delete from cte where rnk>1
