@@ -15,9 +15,16 @@
 -- )
 
 
+-- with cte as (
+--     select id, rank() over(partition by email order by id) as rnk
+--     from person
+-- )
+
+-- delete from cte where rnk>1
+
 with cte as (
-    select id, rank() over(partition by email order by id) as rnk
+    select id, row_number() over(partition by email order by id) as rn
     from person
 )
 
-delete from cte where rnk>1
+delete from cte where rn>1
